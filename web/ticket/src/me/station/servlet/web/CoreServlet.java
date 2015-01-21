@@ -29,17 +29,6 @@ public class CoreServlet extends HttpServlet {
 
 		List<Train> result = CoreService.getBalance(from_station_name,to_station_name, month, day);
 		
-		
-
-		 //response.setContentType("text/html");
-		 //PrintWriter out = response.getWriter();
-		 //out.println(queryUrl);
-
-		// Iterator it = result.iterator();
-		// while(it.hasNext()){
-		// out.println("<br/>try: " + it.next());
-		// }
-
 		request.setAttribute("balance", result);
 		RequestDispatcher view = request.getRequestDispatcher("result.jsp");
 		view.forward(request, response);
