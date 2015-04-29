@@ -1,2 +1,2 @@
 -	位操作
-	-	[5.2](https://github.com/jemoii/project/Cracking_the_Coding_Interview/Java/Chapter5/)
+	-	[5.2](https://github.com/jemoii/project/blob/master/Cracking_the_Coding_Interview/Java/Chapter5/CCI5_2.md)
