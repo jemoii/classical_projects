@@ -1,7 +1,9 @@
 package me.l2s.clazz;
 
 public class L2S {
+	// 版本信息
 	private String version;
+	// 短链接路径信息
 	private String path;
 
 	public L2S() {

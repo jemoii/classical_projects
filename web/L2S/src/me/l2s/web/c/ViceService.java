@@ -25,9 +25,11 @@ public final class ViceService implements Filter {
 		String path = ((HttpServletRequest) request).getRequestURI().substring(
 				5);
 		if (path != null) {
+			// 短链接有效，重定向
 			if (P2T.check(path) != null) {
 				((HttpServletResponse) response).sendRedirect(P2T.check(path));
 				return;
+			// 短链接无效（且不为内部链接），报错
 			} else if (!path.equals("main.html") && !path.equals("main.css")
 					&& !path.equals("main.js") && !path.equals("shorten.do")
 					&& !path.equals("")) {

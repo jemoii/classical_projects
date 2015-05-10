@@ -13,7 +13,8 @@ public class P2T {
 
 		try {
 			jedis = pool.getResource();
-
+			
+			//重定向时，用于判定短链接是否有效
 			direct = jedis.hget("l2s", path);
 		} finally {
 			if (jedis != null) {

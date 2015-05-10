@@ -4,6 +4,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class L2R {
+	// 由32位（16进制）字符串得到4个5位（62进制）字符串
 	public static String[] plantString(String luri) {
 		String md5 = MD5Util(luri);
 		char[] digits = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
@@ -16,10 +17,12 @@ public class L2R {
 		int[][] randoms = new int[4][5];
 
 		for (int i = 0; i < parts.length; i++) {
+			// 将32位字符串分为4段
 			parts[i] = md5.substring(i * 8, (i + 1) * 8 - 1);
 
 			int section = Integer.valueOf(parts[i], 16);
 			parts[i] = "";
+			// 从每段低位开始，每6位（bit）得到一个字符（62进制）
 			for (int j = 0; j < randoms[i].length; j++) {
 				randoms[i][j] = section & 0x3f;
 				parts[i] += digits[randoms[i][j] % 62];
@@ -30,7 +33,8 @@ public class L2R {
 
 		return parts;
 	}
-
+	
+	// 由长链接得到32位（16进制）字符串
 	public static String MD5Util(String luri) {
 		byte[] bs = null;
 

@@ -16,6 +16,7 @@ public class C2J {
 
 		String json = null;
 		try {
+			// 转换L2S实例到JSON数据
 			ObjectMapper mapper = new ObjectMapper();
 			json = mapper.writeValueAsString(l2s);
 		} catch (JsonParseException e) {
