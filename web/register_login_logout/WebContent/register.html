@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册页面</title>
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css"
+	rel="stylesheet">
+<link href="http://getbootstrap.com/examples/theme/theme.css"
+	rel="stylesheet">
+<script src="register-verify.js"></script>
+<script src="register-register.js"></script>
+</head>
+<body>
+	<div class="page-header">
+		<h2>注册账号</h2>
+	</div>
+	<div class="col-md-4">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td><span class="label label-default">邮箱</span></td>
+					<td><input type="text" id="uid" autofocus size="40" /></td>
+					<td><span class="label label-warning" id="uid_tip"></span></td>
+				</tr>
+				<tr>
+					<td><span class="label label-default">验证码</span></td>
+					<td><input type="text" id="verification" size="22" />&nbsp;&nbsp;<input
+						type="submit" class="btn btn-info" id="verify" onclick="verify()"
+						value="获取验证码" /></td>
+					<td><span class="label label-warning" id="verify_tip"></span></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><span class="label label-default">密码</span></td>
+					<td><input type="password" id="password" size="40" /></td>
+				</tr>
+				<tr>
+					<td><span class="label label-default">确认密码</span></td>
+					<td><input type="password" id="affirm" size="40" /></td>
+					<td><span class="label label-warning" id="affirm_tip"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right"><input type="submit"
+						class="btn btn-info" id="register" onclick="register()" value="注册" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" rowspan="4"><div class="alert alert-info"
+							role="alert">
+							<strong>提示！</strong>&nbsp;
+						</div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
