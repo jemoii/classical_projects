@@ -16,34 +16,33 @@
 </head>
 <body>
 
-	<div class="col-md-4">
-		<table class="table">
-			<tbody>
-				<tr>
-					<td colspan="3"><div class="alert alert-info" role="alert">
-							<c:choose>
-								<!--已登录-->
-								<c:when test="${sessionScope.uid != null}">
-									<form method="POST" action="logout.do">
-										<h2>
-											<span class="label label-success">${sessionScope.uid}</span>&nbsp;<input
-												type="submit" class="btn btn-info" id="logout" value="注销" />
-										</h2>
-									</form>
-								</c:when>
-								<!--未登录-->
-								<c:otherwise>
-									<a href="login.jsp"><input type="button"
-										class="btn btn-info" id="login" value="登录" /></a>
-									<a href="register.html"><input type="button"
-										class="btn btn-info" id="register" value="注册" /></a>
-								</c:otherwise>
-							</c:choose>
-						</div></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-
+<div class="col-md-4">
+	<table class="table">
+	<tbody>
+		<tr>
+			<td colspan="3"><div class="alert alert-info" role="alert">
+				<c:choose>
+						<!--已登录-->
+						<c:when test="${sessionScope.uid != null}">
+							<form method="POST" action="logout.do">
+							<h2>
+								<span class="label label-success">${sessionScope.uid}</span>&nbsp;<input
+									type="submit" class="btn btn-info" id="logout" value="注销" />
+							</h2>
+							</form>
+						</c:when>
+						<!--未登录-->
+						<c:otherwise>
+								<a href="login.jsp"><input type="button"
+									class="btn btn-info" id="login" value="登录" /></a>
+								<a href="register.html"><input type="button"
+									class="btn btn-info" id="register" value="注册" /></a>
+						</c:otherwise>
+				</c:choose>
+			</div></td>
+		</tr>
+	</tbody>
+	</table>
+</div>
 </body>
 </html>

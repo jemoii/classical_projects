@@ -32,37 +32,35 @@
 			</div>
 			<div class="col-md-4">
 				<table class="table">
-					<tbody>
-						<tr>
-							<td><span class="label label-default">邮箱</span></td>
-							<td colspan="2"><input type="text" id="uid" autofocus
-								size="40" /></td>
-							<td><span class="label label-warning" id="uid_tip"></span></td>
-						</tr>
-						<tr>
-							<td><span class="label label-default">密码</span></td>
-							<td colspan="2"><input type="password" id="password"
-								size="40" /></td>
-							<td><span class="label label-warning" id="password_tip"></span></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td align="left"><input type="submit" class="btn btn-info"
-								id="login" onclick="verify()" value="登录" /></td>
-							<td align="left"><a href="register.html"><input
-									type="button" class="btn btn-info" id="register" value="注册" /></a></td>
-						</tr>
-						<tr>
-							<td colspan="3" rowspan="4"><div class="alert alert-info"
-									role="alert">
-									<strong>提示！</strong>&nbsp;
-								</div></td>
-						</tr>
-					</tbody>
+				<tbody>
+					<tr>
+						<td><span class="label label-default">邮箱</span></td>
+						<td colspan="2"><input type="text" id="uid" autofocus
+							size="40" /></td>
+						<td><span class="label label-warning" id="uid_tip"></span></td>
+					</tr>
+					<tr>
+						<td><span class="label label-default">密码</span></td>
+						<td colspan="2"><input type="password" id="password"
+							size="40" /></td>
+						<td><span class="label label-warning" id="password_tip"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td align="left"><input type="submit" class="btn btn-info"
+							id="login" onclick="verify()" value="登录" /></td>
+						<td align="left"><a href="register.html"><input
+							type="button" class="btn btn-info" id="register" value="注册" /></a></td>
+					</tr>
+					<tr>
+						<td colspan="3" rowspan="4"><div class="alert alert-info"
+							role="alert"><strong>提示！</strong>&nbsp;
+						</div></td>
+					</tr>
+				</tbody>
 				</table>
 			</div>
 		</c:otherwise>
 	</c:choose>
-
 </body>
 </html>
