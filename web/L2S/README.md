@@ -28,7 +28,3 @@
                 - ViceService
             - v
             	- CoreServlet
-
-#####主页
-
-<http://jemoii.github.io/>
