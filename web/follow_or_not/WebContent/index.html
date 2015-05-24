@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我们的心情</title>
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css"
+	rel="stylesheet">
+<link href="http://getbootstrap.com/examples/theme/theme.css"
+	rel="stylesheet">
+<script type='text/javascript' src='/Follow/dwr/engine.js'></script>
+<script type='text/javascript' src='/Follow/dwr/util.js'></script>
+<script type='text/javascript' src='/Follow/dwr/interface/Page.js'></script>
+<script type='text/javascript' src='/Follow/dwr/interface/Refresh.js'></script>
+<script type='text/javascript' src='assist.js'></script>
+</head>
+<body role="document">
+	<div class="page-header">
+		<h1>不同的心情</h1>
+		<input type="text" size="25" id="uid" />&nbsp;<input type="submit"
+			class="btn btn-sm btn-info" value="登录" onclick="loadHome()" />
+		<!-- 用input是否为空模拟用户是否登录 -->
+	</div>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="list-group" id="mgroup"></div>
+		</div>
+		<!-- 列表 -->
+		<div class="alert alert-success col-sm-4" role="alert" id="log"></div>
+		<!-- 操作日志 -->
+	</div>
+</body>
+</html>
