@@ -1,6 +1,6 @@
 ###注册-登录-注销模块
 
-- sign
+- register_login_logout
 	- verification
 		- Generator #生成随机验证码
 		- Sender #发送随机验证码到注册邮箱

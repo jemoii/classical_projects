@@ -10,7 +10,7 @@
 
 #####查询结构
 
-	- station
+	- ticket
 		- request
 			- DateUtil #在0.1.6版本中用于日期处理
 			- MySQLUtil #用于获取站点对应的英文编码

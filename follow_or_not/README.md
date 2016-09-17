@@ -1,6 +1,6 @@
 ###关注模块
 
-- follow
+- follow_or_not
 	- action
 		- PageController # 用于页面数据生成
 		- VisualDB #模拟数据库
