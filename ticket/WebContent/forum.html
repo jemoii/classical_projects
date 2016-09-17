@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+.title
+{
+color:#09F
+}
+.tip{
+color:#FF0000
+}
+</style>
+<title>余票查询</title>
+</head>
+<body align = "center">
+<h1 class="title">12306 余票查询</h1>
+<form method = "POST"
+	action = "ticket.do">
+	<p>
+		出发站点：<input type="text" name="from_station_name" />
+		到达站点：<input type="text" name="to_station_name" />
+		乘车日期：2015-<input type="text" name="month" size = "1" maxlength="2">-<input type="text" name="day" size = "1" maxlength="2"/>
+	</p>
+	<p class="tip">
+		*按照“2015-02-12”的格式输入日期
+	<p>
+		<input type = "submit" value="查询">
+		<input type="reset" value="重置">
+	</p>
+	</br>
+</form>
+<p>反馈意见至<a href="mailto:je@voler.me">je@voler.me</a></p>
+</body>
+</html>

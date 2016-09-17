@@ -1,0 +1,21 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+<dwr>
+	<allow>
+		<create creator="new" javascript="Page">
+			<param name="class" value="me.voler.classical.follow_or_not.action.PageController" />
+			<include method="homePage" /><!-- 返回列表 -->
+			<include method="showLog" /><!-- 返回日志 -->
+		</create>
+		<create creator="new" javascript="Refresh">
+			<param name="class" value="me.voler.classical.follow_or_not.action.VirtualDB" />
+			<include method="isFollower" /><!-- 返回关注情况 -->
+			<include method="follow" /><!-- 新增关注 -->
+			<include method="cancel" /><!-- 取消关注 -->
+		</create>
+		<convert converter="bean" match="me.voler.classical.follow_or_not.mood.Mood">
+			<param name="include" value="mid,subject,body" />
+		</convert>
+	</allow>
+</dwr>
